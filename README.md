@@ -46,3 +46,17 @@ details = UserAgentDetails.new('Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWeb
     details.client.version == '10.0.648.133'
     
 </code></pre>
+
+#### Dealing with versions
+
+I suggest using 'version_compare' gem (https://github.com/pdobb/version_compare).
+
+Example:
+  If I have a part with version '600.1.4', I could compare like so:
+
+<pre><code>
+Version.new(part.version) <= Version.new('600.1.3') # false
+Version.new(part.version) <= Version.new('600.1.5') # true
+Version.new(part.version) > Version.new('600.2')    # false
+Version.new(part.version) == Version.new('600.1.4') # true
+</code></pre>
