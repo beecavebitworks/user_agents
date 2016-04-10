@@ -10,3 +10,7 @@ SAMPLE_IPOD1='Mozilla/5.0 (iPod; U; CPU iPhone OS 4_3_2 like Mac OS X; en-us) Ap
 SAMPLE_IPAD_FIREFOX='Mozilla/5.0 (iPad; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) FxiOS/1.0 Mobile/12F69 Safari/600.1.4'
 SAMPLE_IPAD_FACEBOOK='Mozilla/5.0 (iPad; CPU OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9A334 [FBAN/FBIOS;FBAV/6.5.1;FBBV/377040;FBDV/iPad2,1;FBMD/iPad;FBSN/iPhone OS;FBSV/5.0;FBSS/1; FBCR/;FBID/tablet;FBLC/de_DE;FBOP/1]'
 SAMPLE_IPAD_FACEBOOK2='Mozilla/5.0 (iPhone; CPU iPhone OS 8_4_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12H321 [FBAN/FBIOS;FBAV/38.0.0.6.79;FBBV/14316658;FBDV/iPhone7,1;FBMD/iPhone;FBSN/iPhone OS;FBSV/8.4.1;FBSS/3; FBCR/AT&T;FBID/phone;FBLC/en_US;FBOP/5]'
+SAMPLE_MULTI_FIRST='iBrowser/3.0/Mozilla/5.0 (Linux; U; Android 2.3.6; yy-yy; Karbonn A2 Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+SAMPLE_FBBOT='facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)'
+SAMPLE_CUSTOM1='some custom - 3234'
+SAMPLE_GOOGLE_BOT5='Mozilla/5.0 (Windows; Mozilla 4.0(compatible; Googlebot/5.0;  http://www.google.com/googlebot); en-US;)'

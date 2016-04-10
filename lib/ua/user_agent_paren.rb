@@ -10,6 +10,9 @@ class UserAgentParen
   def parts
     return nil if @value.nil?
     return @parts unless @parts.nil?
+
+    # first request, let's build parts now
+
     @parts=[]
     @value.split(';').each {|str| @parts.push str.strip }
     @parts

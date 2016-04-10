@@ -4,10 +4,10 @@
 
 class UserAgentDetails
 
-  attr_accessor :parts, :map, :platform
+  attr_accessor :parts, :map, :platform, :client
 
   #---------------------------------------------------------------
-  # Parses and initializes parts, map.  platform will be nil
+  # Parses and initializes parts, map.  platform and client will be nil
   #---------------------------------------------------------------
   def initialize(str)
 
