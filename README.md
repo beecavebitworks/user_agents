@@ -1,20 +1,25 @@
-# user_agents
+# The user_agents gem
 A lightweight ruby gem to parse and search browser User-Agent strings.
+There are several more exhaustive implementations, but most make heavy use of regex on the
+entire User-Agent string.  My implementation use case is to quickly and reliably recognize
+the most popular platforms, os, and clients.  The classifications center around symbols (e.g. :linux and :chrome),
+rather than strings.  Symbols provide a slightly cleaner reading, and can be easily transformed to strings.
+
 There are three top-level classes:
 
 #### UserAgentDetails
   Parses the string and provides access to parts (UserAgentPart array)
 
 #### UserAgentPlatforms
-  (Optional) Extract platform and operating system information from the UserAgentDetails object
+  (Optional) Extract platform and operating system information from the UserAgentDetails object and sets details.platform.
 
 #### UserAgentClients
-  (Optional) Extracts client (e.g. browser) details from the UserAgentDetails object
+  (Optional) Extracts client (e.g. browser) details from the UserAgentDetails object and sets details.client.
 
-#### Basic Usage:
+# Basic Usage:
 <pre><code>
-
-details = UserAgentDetails.new('Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Ubuntu/10.10 Chromium/10.0.648.133 Chrome/10.0.648.133 Safari/534.16')
+UA='Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Ubuntu/10.10 Chromium/10.0.648.133 Chrome/10.0.648.133 Safari/534.16'
+details = UserAgentDetails.new(UA)
 
  # parts is an array of UserAgentPart type
 
@@ -47,7 +52,7 @@ details = UserAgentDetails.new('Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWeb
     
 </code></pre>
 
-#### Dealing with versions
+# Dealing with versions
 
 I suggest using 'version_compare' gem (https://github.com/pdobb/version_compare).
 
