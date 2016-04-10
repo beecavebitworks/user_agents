@@ -1,0 +1,5 @@
+require 'ua/user_agent_details'
+require 'ua/user_agent_part'
+require 'ua/user_agent_paren'
+require 'ua/user_agent_platform'
+require 'ua/user_agent_platforms'
