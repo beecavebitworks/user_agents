@@ -90,9 +90,11 @@ class UserAgentPlatforms
   end
 
   #-----------------------------------------------------------------
-  # sets platform.os_version   (format like '10.11.4')
+  # sets platform.os_release = :osx
+  # sets platform.os_version = (format like '10.11.4')
   #-----------------------------------------------------------------
   def self._get_osx_attrs(platform, details)
+    platform.os_release = :osx
     paren = details.parts[0].paren
     unless paren.nil?
 
