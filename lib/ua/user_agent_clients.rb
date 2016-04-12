@@ -15,6 +15,12 @@ class UserAgentClients
       part = details.get(name)
       unless part.nil?
         details.client = UserAgentClient.new(name.downcase.to_sym, part.version)
+
+        if (name == 'Safari')
+          v = details.get('Version')
+          details.client.version = v.version unless v.nil?
+        end
+
         return true
       end
     }

@@ -31,4 +31,19 @@ class UserAgentClientsTest < Minitest::Test
     UserAgentClients.extract(details)
     assert details.client.nil?
   end
+
+  def test_safari_version
+    details = UserAgentDetails.new(SAMPLE_IOS_931_SAFARI)
+    UserAgentPlatforms.extract details
+    UserAgentClients.extract details
+    assert_equal :ios, details.platform.sym
+    assert_equal '9.3.1', details.platform.os_version
+    assert_equal :safari, details.client.sym
+    assert_equal '9.0', details.client.version
+
+    details = UserAgentDetails.new(SAMPLE_OSX_SAFARI_91)
+    UserAgentClients.extract details
+    assert_equal :safari, details.client.sym
+    assert_equal '9.1', details.client.version
+  end
 end

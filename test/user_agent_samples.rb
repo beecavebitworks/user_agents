@@ -14,3 +14,5 @@ SAMPLE_MULTI_FIRST='iBrowser/3.0/Mozilla/5.0 (Linux; U; Android 2.3.6; yy-yy; Ka
 SAMPLE_FBBOT='facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)'
 SAMPLE_CUSTOM1='some custom - 3234'
 SAMPLE_GOOGLE_BOT5='Mozilla/5.0 (Windows; Mozilla 4.0(compatible; Googlebot/5.0;  http://www.google.com/googlebot); en-US;)'
+SAMPLE_IOS_931_SAFARI='Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13E238 Safari/601.1'
+SAMPLE_OSX_SAFARI_91='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
