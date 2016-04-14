@@ -44,6 +44,7 @@ class UserAgentPlatformsTest < Minitest::Test
     details = UserAgentDetails.new(SAMPLE_IPHONE1)
     UserAgentPlatforms.extract details
     assert_equal :ios, details.platform.sym
+    assert_equal :ios, details.platform.os_release
     assert_equal :iphone, details.platform.device_type
     assert_equal '7.1.2', details.platform.os_version
   end

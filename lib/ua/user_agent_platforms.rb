@@ -122,6 +122,7 @@ class UserAgentPlatforms
   # platform.device_type :ipod, :ipad, :iphone
   #-----------------------------------------------------------------
   def self._get_ios_attrs(platform, details)
+    platform.os_release = :ios
     paren = details.parts[0].paren
     unless paren.nil?
 
