@@ -2,7 +2,7 @@ class UserAgentClients
 
   # Chrome tries to look like Safari, so check it first
 
-  COMMON_BROWSERS=['Chrome','Safari','Firefox','Opera','MSIE','AdobeAIR'].freeze
+  COMMON_BROWSERS=['Edge','Chrome','Safari','Firefox','Opera','MSIE','AdobeAIR'].freeze
 
   # Try to determine client (e.g. browser) making request
   # @param details [UserAgentDetails]

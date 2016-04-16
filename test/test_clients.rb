@@ -46,4 +46,16 @@ class UserAgentClientsTest < Minitest::Test
     assert_equal :safari, details.client.sym
     assert_equal '9.1', details.client.version
   end
+
+  def test_edge
+    details = UserAgentDetails.new(SAMPLE_WIN10_EDGE)
+    UserAgentPlatforms.extract details
+    UserAgentClients.extract details
+
+    assert_equal :win_10, details.platform.os_release
+    assert_equal :edge, details.client.sym
+    assert_equal '13.10586', details.client.version
+    
+  end
+
 end
