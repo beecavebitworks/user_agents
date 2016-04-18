@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'user_agents'
-  s.version     = '0.5.4'
-  s.date        = '2016-04-16'
+  s.version     = '0.5.5'
+  s.date        = '2016-04-18'
   s.summary     = "A lightweight gem for parsing and searching browser User-Agent strings"
   s.description = "The goal is to provide a utility to quickly parse User-Agent strings and determine browser, platform, and operating system versions for the most popular http clients with a miminum of regex."
   s.authors     = ["Alex Malone"]

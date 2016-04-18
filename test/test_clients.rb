@@ -58,4 +58,14 @@ class UserAgentClientsTest < Minitest::Test
     
   end
 
+  def win_msie11
+    details = UserAgentDetails.new(SAMPLE_WIN10_IE11)
+    UserAgentPlatforms.extract details
+    UserAgentClients.extract details
+
+    assert_equal :win_10, details.platform.os_release
+    assert_equal :msie, details.client.sym
+    assert_equal '11.0', details.client.version
+  end
+
 end
