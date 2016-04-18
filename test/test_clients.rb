@@ -58,7 +58,7 @@ class UserAgentClientsTest < Minitest::Test
     
   end
 
-  def win_msie11
+  def test_win_msie11
     details = UserAgentDetails.new(SAMPLE_WIN10_IE11)
     UserAgentPlatforms.extract details
     UserAgentClients.extract details

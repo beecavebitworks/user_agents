@@ -32,18 +32,22 @@ class UserAgentClients
       return true
     end
 
-    part = details.get('Trident')
-    unless part.nil?
-      paren = details.parts[0].paren
+    paren = details.parts[0].paren
+    unless paren.nil?
+      trident=false
       v=nil
       paren.parts.each {|part|
         if part.start_with?('rv:')
           tmp,v=part.split(':',2)
+        elsif part.start_with?('Trident')
+          trident=true
         end
       }
 
-      details.client = UserAgentClient.new(:msie, v)
-      return true
+      if trident
+        details.client = UserAgentClient.new(:msie, v)
+        return true
+      end
     end
 
     return false
